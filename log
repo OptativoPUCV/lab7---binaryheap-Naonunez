@@ -123,3 +123,15 @@ heap.c:37:18: error: assignment to ‘int’ from ‘Heap *’ {aka ‘struct He
 cc1: all warnings being treated as errors
 Compilation failed
 4c33d8f
+Thu 28 Sep 2023 01:37:36 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:37:20: error: ‘p’ undeclared (first use in this function); did you mean ‘pq’?
+   37 |   Nuevo.priority = p;
+      |                    ^
+      |                    pq
+heap.c:37:20: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+e5a3cc8
