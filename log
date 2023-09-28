@@ -135,3 +135,9 @@ heap.c:37:20: error: ‘p’ undeclared (first use in this function); did you me
 heap.c:37:20: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 e5a3cc8
+Thu 28 Sep 2023 01:38:24 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|2
+total_score: 25/70
+d7ada0f
