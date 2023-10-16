@@ -274,3 +274,9 @@ heap.c:67:23: error: variable ‘Padre’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 fa54db1
+Mon 16 Oct 2023 02:39:27 AM UTC: 
+ heap.c | 15 +++++++++++++--
+ 1 file changed, 13 insertions(+), 2 deletions(-)
+ tests:  8|0
+total_score: 70/70
+90f3436

@@ -64,11 +64,11 @@ void heap_pop(Heap* pq){
   pq->size=pq->size-1;
 
   //Reordenamos
-  int aux=0, HijoIz,  Padre;
+  int aux=0, HijoIz, HijoDer, Padre;
 
   while(true){
     HijoIz = 2 * aux + 1;
-    //HijoDer = 2 * aux + 2;
+    HijoDer = 2 * aux + 2;
 
     //Si el izquierdo es mayor
     if(HijoIz < pq->size && pq->heapArray[HijoIz].priority > pq->heapArray[aux].priority){
@@ -77,8 +77,19 @@ void heap_pop(Heap* pq){
     else{
       Padre = aux;
     }
-    
-    
+
+    //Si el derecho es mayor
+    if(HijoDer < pq->size && pq->heapArray[HijoDer].priority > pq->heapArray[Padre].priority){
+      Padre = HijoDer;
+    }
+
+    if(aux == Padre){
+      break;
+    }
+
+    heapElem Nuevo = pq->heapArray[aux];
+    pq->heapArray[aux] = pq->heapArray[Padre];
+    pq->heapArray[Padre] = Nuevo;
   }
 
 }
