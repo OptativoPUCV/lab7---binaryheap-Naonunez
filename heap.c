@@ -68,7 +68,7 @@ void heap_pop(Heap* pq){
 
   while(true){
     HijoIz = 2 * aux + 1;
-    HijoDer = 2 * aux + 2;
+    //HijoDer = 2 * aux + 2;
 
     //Si el izquierdo es mayor
     if(HijoIz < pq->size && pq->heapArray[HijoIz].priority > pq->heapArray[aux].priority){

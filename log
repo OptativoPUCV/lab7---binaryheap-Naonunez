@@ -263,3 +263,14 @@ heap.c:67:23: error: variable ‘Padre’ set but not used [-Werror=unused-but-s
 cc1: all warnings being treated as errors
 Compilation failed
 df8fe5e
+Mon 16 Oct 2023 02:34:41 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:67:23: error: variable ‘Padre’ set but not used [-Werror=unused-but-set-variable]
+   67 |   int aux=0, HijoIz,  Padre;
+      |                       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+fa54db1
