@@ -248,3 +248,18 @@ heap.c:67:22: error: variable ‘HijoDer’ set but not used [-Werror=unused-but
 cc1: all warnings being treated as errors
 Compilation failed
 ec94ab9
+Mon 16 Oct 2023 02:34:31 AM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_pop’:
+heap.c:71:5: error: ‘HijoDer’ undeclared (first use in this function)
+   71 |     HijoDer = 2 * aux + 2;
+      |     ^~~~~~~
+heap.c:71:5: note: each undeclared identifier is reported only once for each function it appears in
+heap.c:67:23: error: variable ‘Padre’ set but not used [-Werror=unused-but-set-variable]
+   67 |   int aux=0, HijoIz,  Padre;
+      |                       ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+df8fe5e

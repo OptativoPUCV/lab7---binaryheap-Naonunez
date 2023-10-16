@@ -64,7 +64,7 @@ void heap_pop(Heap* pq){
   pq->size=pq->size-1;
 
   //Reordenamos
-  int aux=0, HijoIz, HijoDer, Padre;
+  int aux=0, HijoIz,  Padre;
 
   while(true){
     HijoIz = 2 * aux + 1;
